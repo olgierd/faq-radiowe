@@ -13,7 +13,7 @@
 \usepackage[a4paper, left=2 cm, right=2 cm, top=3cm, bottom=3cm,]{geometry}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
 \usepackage{secdot}
-\title{\textbf{FAQ - Często zadawane pytania przez przyszłych i początkujących radioamatorów}}
+\title{\textbf{FAQ -- Często zadawane pytania przez przyszłych i początkujących radioamatorów}}
 \author{Fundacja Hackerspace Kraków
 oraz klub SP9KGP\\
 Autorzy:\\
@@ -45,10 +45,10 @@ Pasmo, modulacja, propagacja… Te dziwne słowa usłyszane od znajomych sprawi�
 Z definicji służba radioamatorska, to ``służba mająca na celu samokształcenie i nawiązywanie łączności (...)''. Jak sama nazwa mówi - daje to satysfakcję z tego, że się porozmawia z kimś ciekawym - tak samo można mieć satysfakcje z skonstruowania sprzętu lub zrobienia dalekiej, czy rzadkiej łączności.
 
 \section{Jaki sprzęt jest potrzebny na początek zabawy?}
-Na początek najlepszym “starter kit-em”, który pozwala na lokalną łączność na fonii, jest mniej więcej coś takiego:
+Na początek najlepszym “starter kitem”, który pozwala na lokalną łączność na fonii w pasmach 2m i 70cm, jest mniej więcej coś takiego:
 \begin{itemize}
- \item radio ręczne na przykład Baofeng UV-82 lub w wypadku większej ilości dostępnej gotówki Wouxun
- \item przejściówka na cywilizowane złącze UC-1
+ \item radio ręczne, na przykład Baofeng UV-82, lub w wypadku większej ilości dostępnej gotówki Wouxun
+ \item kabel antenowy i końcówka/przejściówka pozwalająca na podłączenie go do radia (ręczne radiotelefony posiadają zazwyczaj złącze typu SMA -- nie mylić z RP-SMA używanym w urządzeniach Wi-Fi -- nie będzie pasować)
  \item jakaś sensowna antena własnej produkcji (np. prosty dipol) lub kupna (np. typu 2x5/8)
 \end{itemize}
 
@@ -58,13 +58,18 @@ Na początek najlepszym “starter kit-em”, który pozwala na lokalną łączn
 \item Dla kategorii 3 są to pasma 160m, 80m, 15m, 10m, 2m, 70cm i 3cm (10GHz).\end{itemize}
 
 \section{Jaki jest zasięg pasm (propagacja)?}
-Niższe pasma (80m, 40m) bardziej nadają się na łączności lokalne, lecz przy dobrych warunkach pozwalają również na DX-y. Pasmo 20m jest chyba najoptymalniejsze dla dalekich łączności, lecz nie nadaje się do lokalnych rozmów. Wyższe pasma (powyżej 20m) są aktywne głównie w ciągu dnia, pozwalając na łączności z całym światem, przy dosyć ograniczonym nakładzie środków.
+Zasięg, zależny od propagacji to bardzo rozległy temat. Każde z pasm zachowuje się w trochę inny sposób. Fale krótkie (od 3 do 30 MHz) pozwalają na łączności globalne (międzykontynentalne), gdyż odbijają się one od jonosfery i powracają na ziemię. 80 metrów to głównie łączności krajowe, pasmo to ''chodzi'' zazyczaj wieczorami i nocą. 40 m jest pasmem uniwersalnym, w dzień pozwalając na łączności lokalne, nocą często można na nim usłyszeć dalekie stacje z Azji i Ameryki. Podobnie zachowuje się 30 metrów. 20 metrów to pasmo głównie dzienne, umożliwiające dalekie łączności. Wyższe pasma, czyli 17, 15, 12 i 10 metrów to pasma zdecydowanie dzienne, pozwalające na bardzo dalekie łączności, ale silnie zależne od stanu jonosfery i aktywności słonecznej. Często przez kilka tygodni pozostają one ''zamknięte'' -- nie jest możliwe prowadzenie łączności poprzez odbicie od jonosfery. Poprzez nasłuch, wykorzystanie dx-cluster'a, sieci reverse beacon oraz dedykowane oprogramowanie możliwe jest określenie propagacji, czyli możliwego zasięgu na danym paśmie fal krótkich.
+
+Fale ultrakrótkie (za wyjątkiem pasma 50 MHz w okresach bardzo wysokiej aktywności słonecznej) nie odbijają się od jonosfery, przez co ich zasięg jest zazwyczaj ograniczony do kontaktów lokalnych na fali przyziemnej (kilkadziesiąt km). Uzyskiwane dystanse są zależne od rodzaju i wysokości anten, ukształtowania terenu i mocy nadajnika -- nadając z gór, nie jest zaskoczeniem łączność na dystansie 200 kilometrów. Kilka lub kilkanaście razy do roku, możliwe jest nawiązywanie łączności nawet na kilkaset kilometrów. Powodowane jest to przez odpowiedni układ ciśnień i temperatur w troposferze -- są to jednak zjawiska i okresowe (zazwyczaj max. 2-3 dni). Stacje z kierunkowymi antenami, odpowiednio mocnymi nadajnikami i czułymi odbiornikami, są w stanie prowadzić łączności przez tak egzotyczne sposoby propagacji jak odbijanie sygnału od przelatujących samolotów czy śladów po wpadających w ziemską atmosferę meteorach.
+
+Pasma mikrofalowe, czyli częstotliwości powyżej 1 GHz, propagują się podobnie jak fale ultrakrótkie -- aczkolwiek im wyższa częstotliwość, tym bardziej tłumiony jest sygnał, co przekłada się na mniejszy zasięg. Fabryczne urządzenia nadawczo-odbiorcze na pasma mikrofalowe nie są (z małymi wyjątkami) dostępne w sprzedaży, co sprawia że aktywność na tych pasmach jest zdecydowanie mniejsza niż na uprzednio wymienionych, pomimo iż oferują one ciekawe możliwości propagacyjne (np. odbicie sygnału od kropli deszczu w paśmie 3 cm).
 
 \section{Co to w ogóle jest to „pasmo”?}
-Pasmo to po prostu jasno określony zakres częstotliwości. Często podawana jest długość fali np. pasmo 144MHz to inaczej pasmo 2m.
+Pasmo to po prostu jasno określony zakres częstotliwości. Często podawana jest długość fali np. pasmo 144 MHz to inaczej pasmo 2 m. Długość fali o danej częstotliwości otrzymujemy dzieląc prędkość światła przez częstotliwość, np. $ 300\frac{mln. km}{s} / 24.9 MHz = 12.04 m $, czyli pasmo 12 metrów. Nazewnictwo jest zwyczajowe -- pasmo 14,000 -- 14,350 MHz nazywa się pasmem 20 metrów, mimo iż fala o długości 20 m to równe 15 MHz.
 
 \section{Co to jest DX?}
-DX, czyli daleka łączność. Zazwyczaj nawiązuje się je przez odbicia od jonosfery, która służy za naturalny ekran Ziemi, który część sygnału wypromieniowuje w kosmos, a część odbija znów do Ziemi. W zależności od pasma, odbicie od jonosfery jest większe, lub mniejsze.
+DX to potoczne określenie dalekiej łączności. Na falach krótkich nawiązuje się je przez odbicie sygnału od jonosfery -- jednej z warstw atmosfery. Odbity sygnał trafia z powrotem na ziemię, kilkaset lub kilka tysięcy kilometrów dalej, odbija się ponownie i po kilku takich cyklach trafia do odbiorcy, który może znajdować się nawet kilkanaście tysięcy km od nas. Definicja DXa jest zależna od pasma -- nawiązanie łączności z Wielką Brytanią na falach krótkich to nic szczególnego, w paśmie 2m jest to natomiast rzadkie osiągnięcie. 
+
 
 \section{Jak wygląda przykładowa ``łączność''?}
 Poniżej zamieściliśmy zapis przykładowej łączności pomiędzy stacjami SQ9ZAQ oraz SV3GLL:
@@ -81,12 +86,12 @@ Poniżej zamieściliśmy zapis przykładowej łączności pomiędzy stacjami SQ9
 \end{itemize}
 
 \section{Co to jest przemiennik?}
-Przemiennik to, najprościej mówiąc, stacja retransmisyjna - odbierająca na jednej częstotliwości i nadająca na drugiej. W paśmie 2m jest to różnica 600kHz (np. 145,600MHz odbiór, 145,000MHz nadawanie), a w paśmie 70cm - 7.6MHz. Różnica ta nazywana jest ‘shift’ lub ‘rpt offset’ i w Polsce oraz większości krajów jest ujemna, co oznacza, że powinniśmy mieć w radiu ustawioną częstotliwość wyjścia przemiennika, a nadawać na częstotliwości niższej. Aby skorzystać z przemiennika, należy go ``otworzyć'' czyli uruchomić. Zwykle robi się to na 3 sposoby:
+Przemiennik to, najprościej mówiąc, stacja retransmisyjna - odbierająca na jednej częstotliwości i nadająca na drugiej. W paśmie 2m jest to różnica 600kHz (np. odbieramy przemiennik na 145,600MHz, nadajemy do niego na 145,000MHz), a w paśmie 70cm - 7,6MHz. Różnica ta nazywana jest ‘shift’ lub ‘rpt offset’ i w Polsce oraz większości krajów jest ujemna, co oznacza, że powinniśmy w radiu słuchać częstotliwości wyjścia przemiennika, a nadawać na częstotliwości niższej. Aby skorzystać z przemiennika, należy go ``otworzyć'' czyli uruchomić. Zwykle robi się to na 3 sposoby:
 
 \begin{enumerate}
- \item Nośną - czyli przemiennik uruchamia się jak tylko słyszy, że ktoś do niego nadaje na określonej częstotliwości - zwanej częstotliwością wejściową przemiennika.
- \item Tonem 1750Hz - czyli przed rozpoczęciem rozmowy należy nadać odpowiedni sygnał, równy 1750Hz. Większość urządzeń ma wbudowaną taką funkcję, jeśli jednak jej nie powiadamy to wystarczy w odpowiedni sposób gwizdnąć w mikrofon.
- \item Tonem CTCSS - czyli nałożoną na naszą rozmowę niesłyszalną częstotliwością, która powoduje otwarcie przemiennika.
+ \item Nośną -- czyli przemiennik uruchamia się jak tylko słyszy, że ktoś do niego nadaje na określonej częstotliwości -- zwanej częstotliwością wejściową przemiennika.
+ \item Tonem 1750Hz -- czyli przed rozpoczęciem rozmowy należy nadać odpowiedni sygnał, równy 1750Hz. Większość urządzeń ma wbudowaną taką funkcję, jeśli jednak jej nie powiadamy to wystarczy w odpowiedni sposób gwizdnąć w mikrofon.
+ \item Tonem CTCSS -- czyli nałożoną na naszą rozmowę niesłyszalną częstotliwością, która powoduje otwarcie przemiennika.
 \end{enumerate}
 
 
@@ -99,9 +104,8 @@ Aplikacje klienta EchoLink dostępne są na wszystkie systemy operacyjne, także
 Istnieje także możliwość wypożyczenia od kogoś konta EchoLink, jeśli nie mamy licencji, ale tylko w celu nasłuchu, nie możemy nic nadawać. To jest dobre, jeśli chcemy posłuchać i “obyć się” z protokołem krótkofalarskim czyli tzw. „operatorką”, a w dodatku nie wymaga to posiadania innego sprzętu niż komputer.
 
 \section{Co to jest znak wywoławczy i gdzie mogę sprawdzić listę przyznanych znaków?}
-Znak wywoławczy to unikalny na cały świat skrót składający się z od 4 do 6 znaków, lub nawet do 8 znaków (dla stacji okolicznościowych). Składa się z prefiksu (dwa znaki alfanumeryczne - dla Polski to SP, SQ, SR, SO, SN, 3Z, HF), numeru okręgu (dla Polski od 1 do 9) i sufiksu (1-4 liter, a dla stacji okolicznościowych, nawet do 5).
+Znak wywoławczy to unikalny na cały świat skrót składający się z od 4 do 6 znaków, lub nawet do 8 znaków (dla stacji okolicznościowych). Składa się z prefiksu (dwa znaki alfanumeryczne - dla Polski to SP, SQ, SR, SO, SN, 3Z, HF), numeru okręgu (dla Polski od 0 do 9) i sufiksu (1-4 liter, a dla stacji okolicznościowych, nawet do 5).
 Dość często aktualizowaną listę wydanych pozwoleń można znaleźć w arkuszu od UKE\footnote{\url{http://www.uke.gov.pl/pozwolenia-radiowe-oraz-decyzje-zmieniajace-pozwolenia-radiowe-w-sluzbie-radiokomunikacyjnej-amatorskiej-8753}}.
-
 
 \section{Jakie są zasady wydawania znaków wywoławczych?}
 Aktualnie znak wywoławczy jeśli jest wolny to można sobie wybrać, kiedyś wydawano je po kolei. Jedynym zastrzeżonym formalnie prefiksem jest SR - zarezerwowany dla pozwoleń kategorii 5 - stacjom automatycznym (stacjom pogodowym, beaconom, przemiennikom). Prefiksy 3Z, HF i SN zazwyczaj używane są w znakach stacji okolicznościowych i tak są postrzegane na świecie - jednak nie ma żadnych obostrzeń co do ich wyboru.
@@ -129,8 +133,7 @@ Znak okolicznościowy uzyskuje się w UKE, tak jak każdy inny znak.
 Warto dodać że uzyskanie znaku okolicznościowego to zmiana warunków naszego pozwolenia. Jeśli więc klub SP9KGP uzyska znak okolicznościowy HF2HS przez czas ważności znaku okolicznościowego NIE MOŻE posługiwać się znakiem własnym.
 
 \section{Czy mogę nadawać z mocą ``ile fabryka dała''?}
-Powinno się nadawać maksymalnie z mocą, podaną na pozwoleniu. Przy większych mocach nie ma większego zysku, wiec nawet nie ma sensu marnować prądu na to, żeby wytracał się na antenie ;) Lepiej zrobić dobrą antenę niż sugerować się mocą nadajnika.
-Łączność należy utrzymywać przy minimalnej mocy niezbędnej do komfortowej pracy. 
+Łączność należy utrzymywać przy minimalnej mocy niezbędnej do komfortowej pracy, oczywiście nie przekraczając wartości podanej na pozwoleniu. Lepiej zrobić dobrą antenę niż zwiększać przesadnie moc naszej stacji -- jeśli chcemy mocno nadawać, to warto też dobrze odbierać.
 
 \section{Co to jest SWR i dlaczego warto zwracać nie niego uwagę?}
 SWR to skrót od Standing Wave Ratio czyli po polsku Współczynnik Fali Stojącej (WFS). W dużym uproszczeniu, SWR mówi nam o niedopasowaniu impedancji nadajnika, linii zasilającej oraz anteny. Fala stojąca powstaje w linii zasilającej (kablu, fiderze zwał jak zwał), w wyniku niedopasowania impedancji falowej tejże linii do impedancji falowej anteny. Standardowo impedancja wynosi 50 Ohm, ale w wyniku różnych czynników takich jak np.: długość kabla, jakość złączy, jakość kabla impedancja linii zasilającej zmienia się. 
@@ -142,13 +145,15 @@ Do pomiaru SWR używa się urządzeń zwanych reflektometrami\footnote{\url{http
 Do prawidłowego pomiaru przydatne jest również sztuczne obciążenie. Dzięki niemu możemy najpierw przetestować linię zasilającą, następnie antenę na innym kablu co pozwala nam ocenić czy problem wynika z uszkodzenia fidera (kabla linii zasilającej), anteny czy złącz.
 
 \section{Dlaczego „jak nie wiesz co zrobić to zrób antenę”?}
-Anteny można podzielić do dookólne i kierunkowe. Im bardziej kierunkowa jest antena, tym ma większy zysk, bo więcej mocy jest wykorzystane do promieniowania fal radiowych w konkretnym kierunku. Na przykład dla anteny Yagi-Uda dodawanie elementów do anteny, zwiększa jej zysk energetyczny, a także kierunkowość.
-Policzmy - różnica pomiędzy 100W a 400W, czyli czterokrotny zysk mocy, to tylko dwukrotnie mocniejszy sygnał odbierany (+3dB), czyli tylko 1 punkt na s-metrze w radiu. 
+Anteny można podzielić do dookólne i kierunkowe. Im bardziej kierunkowa jest antena, tym ma większy zysk, bo więcej mocy jest wykorzystane do promieniowania fal radiowych w konkretnym kierunku. Dla fal ultrakrótkich najpopularniejszą anteną kierunkową jest antena typu Yagi-Uda, pozwalająca na zysk energerytyczny  w zakresie kilka--kilkanaście decybeli.
+Policzmy -- różnica pomiędzy 100W a 400W, czyli czterokrotny zysk mocy, to o 6 decybeli mocniejszy sygnał odbierany (+6dB), czyli tylko 1 punkt na skali s-metra w radiu (mierniku siły odbieranego sygnału).
 
-Zamiast używać nadajnika o większej mocy, możemy niewielkim kosztem zrobić antenę, która będzie miała zysk energetyczny. Zysk energetyczny jest to stosunek mocy promieniowania w danym kierunku naszej anteny do mocy anteny wzorcowej, którą najczęściej jest dipol (dBd) lub antena izotropowa (dBi). Zysk dipola jest większy w stosunku do anteny izotropowej o 2,15dB więc: 0dBd = 2,15dBi. Antena z zyskiem 3 dBd w danym kierunku emituje 2 razy więcej energii w niż dipol. W zależności od rodzaju anteny, można osiągnąć zysk energetyczny od kilku do nawet kilkudziesięciu dBd. W ten sposób dostarczając do anteny taką samą energię, możemy wyemitować dużo silniejszy sygnał w określonym kierunku.
+Zamiast używać nadajnika o większej mocy, możemy niewielkim kosztem zrobić antenę, która będzie miała zysk energetyczny. Zysk energetyczny jest to stosunek mocy promieniowania w danym kierunku naszej anteny do mocy anteny wzorcowej, którą najczęściej jest dipol (o zysku 0 dBd) lub antena izotropowa (nadająca równomienie we wszystkich kierunkach, o zysku 0 dBi). Zysk dipola jest większy w stosunku do anteny izotropowej o 2,15 dB więc: 0 dBd = 2,15 dBi. Antena z zyskiem 3 dBd emituje w danym kierunku 2 razy więcej energii niż dipol. W zależności od rodzaju anteny, można osiągnąć zysk energetyczny od kilku do nawet kilkudziesięciu dBd. W ten sposób dostarczając do anteny taką samą energię, możemy wyemitować dużo silniejszy sygnał w określonym kierunku -- ale słabszy w pozostałych kierunkach.
 
 \section{Czy radia muszą mieć atesty, certyfikaty, zaświadczenia, świadectwa dopuszczenia?}
-Radioamatorzy jako jedyna grupa nadawców radiowych jest zwolniona z tego obowiązku. Dzięki temu możemy używać (a nawet powinniśmy) sprzętu - anten, nadajników, odbiorników własnej konstrukcji. Co bardziej ambitni mogą próbować używać naturalnych elementów otoczenia jako anteny. Znane są przypadki używania... karnisza jako anteny.
+Radioamatorzy jako jedyna grupa nadawców radiowych jest zwolniona z tego obowiązku. Dzięki temu możemy używać (a nawet powinniśmy) sprzętu -- anten, nadajników, odbiorników własnej konstrukcji. Co bardziej ambitni mogą próbować używać naturalnych elementów otoczenia jako anteny. Znane są przypadki używania... karnisza jako anteny.
+
+Wykorzystując własnoręcznie zbudowany sprzęt należy pamiętać o bezpieczeństwie (własnym i osób postronnych) oraz upewnić się, że wykonane przez nas urządzenia nie powodują zakłóceń i nie emitują niepożądanych sygnałów.
 
 \section{Jaka antena najlepsza na początek?}
 Najlepiej zaczynać z najprostszymi antenami, takimi jak prosty dipol półfalowy, pionowa ćwiartka (antena ćwierćfalowa), inverted vee (dipol w konfiguracji odwróconego V), a potem zabierać się za wielopasmowe anteny z trapami (filtrami LC odcinającymi sygnały powyżej danej częstotliwości), czy skomplikowanymi układami strojenia.
@@ -169,10 +174,10 @@ Jeśli mamy mieszkanie własnościowe to należy nam się dostęp do dachu. I ni
 Do komina można montować maszt tylko za pomocą specjalnych opasek (bez ingerencji w strukturę komina). Maszt wraz z antenami nie powinien mieć więcej jak 3.0 m ponad poziom dachu (przepisy budowlane zezwalają na maszty do 3 metrów bez pozwolenia). Wyższe maszty powinny być wyposażone w odciągi oraz wymagają zgłoszenia w odpowiedniej instytucji.
 
 \section{Czy metalowy balkon nie jest przypadkiem przeszkodą?}
-Po odpowiednim dystansowaniu anteny (więcej niż 1/4 fali) nie będzie on przeszkadzał. Inaczej balkon robi za dodatkowy element anteny, który niekoniecznie musi nam pomagać.
+To zależy jaką antenę chcemy na nim zamontować. Dla anten pionowych nie będzie to przeszkoda, dla poziomych (np. dipol na pasmo 2m) warto zapewnić 1/4 fali odstępu od balustrady. Montując antenę na balkonie, należy starać się jak najmocniej odsunąć ją od ściany.
 
 \section{Jaki jest koszt całej imprezy?}
-W zależności od potrzeb. Można zacząć od zabawy w „nasłuchowca” kupując „RTLSDR” za kilkadziesiąt złotych, można zacząć od prostego radia ręcznego w okolicach 200zł. Jeśli ktoś nie jest fanem wstęg, to można kupić dobre i wydajne radio jedno, bądź kilkupasmowe za mniej niż 1000zł. Z tzw. allbanderami (urządzenie obsługujące kilka pasm amatorskich, zwykle z zakresu 160m-70cm) sytuacja jest już troszkę mniej kolorowa, gdyż za nowy sprzęt trzeba czasami wydać od 3, do nawet 30 tysięcy złotych za sprzęt dla najbardziej wymagających radioamatorów. Na szczęście w środowisku można znaleźć osoby, które sprzedają używany sprzęt za sensowne pieniądze.
+W zależności od potrzeb. Można zacząć od zabawy w „nasłuchowca” kupując podłączany do komputera odbiornik „RTLSDR” za kilkadziesiąt złotych, można też zacząć od prostego radia ręcznego na pasma 2m i 70cm (z modulacją FM) w okolicach 200zł. Fale krótkie wymagają większego nakładu -- używany transceiver jedno- lub dwupasmowy DIY to 300-500 zł, używane fabryczne urządzenie na wszystkie pasma -- od 1000zł w zależności od stanu. Z tzw. allbanderami (urządzenie obsługujące kilka pasm amatorskich, zwykle z zakresu 160m-70cm) sytuacja jest już troszkę mniej kolorowa, gdyż za nowy sprzęt trzeba czasami wydać od 3, do nawet 30 tysięcy złotych za sprzęt dla najbardziej wymagających radioamatorów. Na szczęście w środowisku można znaleźć osoby, które sprzedają używany sprzęt za sensowne pieniądze.
 Całość kosztów administracyjnych to: 50zł opłaty za egzamin + 25zł za wydanie świadectwa radiooperatora + 82zł za wyrobienie i wydanie pozwolenia radiowego. I koszt znaczków, ponieważ część dokumentów trzeba wysłać do Warszawy.
 
 \section{Czy egzamin jest trudny?}
@@ -182,7 +187,7 @@ Nie, baza pytań jest ogólnodostępna, a większość odpowiedzi jest możliwa 
 Pytania do egzaminu można pobrać na stronie UKE\footnote{\url{http://www.uke.gov.pl/swiadectwa-w-sluzbie-radiokomunikacyjnej-amatorskiej-4390}}.
 
 \section{Co to jest stacja automatyczna?}
-Stacja automatyczna, to rodzaj radiostacji, do której obsługi nie jest potrzebny człowiek (najwyżej do nadzoru). Zazwyczaj są to przemienniki, stacje meteorologiczne, balony różnej maści, czy eksperymenty. Taka stacja może dostać licencje kategorii piątej, znak zaczynający się prefiksem SR i maksymalną mocą nadawania poniżej 30 MHz - 50 W, a powyżej 10 W.
+Stacja automatyczna, to rodzaj radiostacji, do której obsługi nie jest potrzebny człowiek (najwyżej do nadzoru). Zazwyczaj są to przemienniki, beacony, stacje meteorologiczne, balony różnej maści, czy eksperymenty. Taka stacja może dostać licencje kategorii piątej, znak zaczynający się prefiksem SR i maksymalną mocą nadawania poniżej 30 MHz - 50 W, a powyżej 10 W.
 Stacje automatyczną można uruchomić na okres testowy do trzech miesięcy pod własnym znakiem.
 
 \section{Czym różni się pozwolenie radiowe od świadectwa radiooperatora?}
@@ -227,7 +232,7 @@ Jonosfera nie zachowuje się cały czas tak samo. Czasem fala odbija się lepiej
 Sporo zależy też od aktywności słońca.
 
 \section{Jak zacząć przygodę z nasłuchem czyli RTLSDR?}
-Historia RTLSDR wygląda mniej więcej tak: podczas pisania linuksowego sterownika dla rtl28832 i podobnych okazało się, że moduł ten udostępnia znacznie więcej danych z odbiornika niż można by oczekiwać od odbiornika telewizji naziemnej. Napisano więc „sterownik” (nie jest to sterownik ładowany do jądra, ale specjalny, userlandowy wykorzystujący bibliotekę libusb), który potrafi odebrać i zinterpretować dane z niego. W ten sposób uzyskano bardzo tani odbiornik „SDR” (Software Defined Radio).
+Historia RTLSDR wygląda mniej więcej tak: podczas pisania linuksowego sterownika dla rtl2832 i podobnych okazało się, że moduł ten udostępnia znacznie więcej danych z odbiornika niż można by oczekiwać od odbiornika telewizji naziemnej. Napisano więc „sterownik” (nie jest to sterownik ładowany do jądra, ale specjalny, userlandowy wykorzystujący bibliotekę libusb), który potrafi odebrać i zinterpretować dane z niego. W ten sposób uzyskano bardzo tani odbiornik „SDR” (Software Defined Radio).
 
 Główną zaletą tego typu odbiorników jest to, że całość demodulacji wykonujemy programowo. Jeśli nagle chcemy odebrać coś w modulacji AM - nie ma problemu. Chcemy posłuchać SSB? Nie ma problemu. Chcemy zobaczyć jakie dane wysyła nasz licznik wody czy pilot od bramy garażowej? Nie ma problemu - wystarczy tylko odpowiedni kawałek oprogramowania.
 Na początek przygody z rtlsdr bardzo polecam zapoznanie się z systemem ADS-B używanym w lotnictwie. Istnieją bardzo dobre programy umożliwiające demodulację tych sygnałów, w dodatku nadajniki są bardzo korzystnie rozlokowane (w samolotach), więc wystarczy nam dość prosta antena aby odbierać sygnały z obszaru wielu kilometrów! Na początek jest to bardzo satysfakcjonujące zajęcie.
@@ -261,12 +266,13 @@ Jeśli na 2m to zacznij od 145.550 to taka trochę krakowska częstotliwość wy
 
 
 \section{Co to są transmisje cyfrowe i jak bardzo mam się tym przejmować?}
-To zależy czy cyfrówki Cię wciągną. 
-Na UKF-ie prawie się nie używa emisji cyfrowych. 
-Na falach krótkich jest SSTV czyli wysyłanie obrazków. Wymaga to praktyki operatorskiej ale daje masę radości. Są też RTTY i PSK31 i trzeba wspomnieć że zwłaszcza PSK jest diablo skuteczna. To czego się nie zaliczy na fonii, cyfrowo wpada z niezłymi raportami. 
-Jak masz ciśnienie na zaliczanie podmiotów DXCC albo żonę która ma już dość szumu w domu, to cyfrówki są alternatywą.
+Transmisje cyfrowe to transmisje nadawane i odbierane przy użyciu podłączonego do radia komputera (lub tabletu, telefonu) z odopwiednim oprogramowaniem (np. MixW, FLdigi). Najpopularniejsze emisje obecne na falach krótkich to PSK-31, RTTY (umożliwiają przesyłanie tekstu); JT65 (bardzo powolna transmisja -- nadanie 13 znaków trwa prawie minutę, ale przez to da się odebrać bardzo słabe sygnały i zaliczać dalekie łączności małą mocą i skromnymi antenami); SSTV - transmisja obrazów linia po linii w sposób analogowy).
 
-SSTV-owcy to strasznie zamknięte kółeczko - ciężko się wbić. Jeśli chcesz zrobić Japonię, lub inny dalszy kraj małą mocą, to warto zainteresować się JT65 - bardzo skuteczne rozwiązanie. Na KF-ie jest sporo miłośników emisji cyfrowych - jest to w sumie jedyna możliwość, jeśli interesuje kogoś pasmo 30m, a z telegrafii słabo mu idzie. Poza tym są stałe częstotliwości - 7040-7050, 14076-14090, 18100-18105, 21076-21090 i tak dalej - wszystko jest do znalezienia w bandplanie regionu 1 IARU.
+Na falach ultrakrótkich najbardziej rozpowszechniona transmisja cyfrowa to APRS; do łączności troposferycznych i EME wykorzystuje się JT65.
+
+Zaletą emisji cyfrowych jest wysoka sprawność energetyczna: pasmo ludzkiego głosu to 3 kHz, sygnał PSK-31 zajmuje tylko kilkadziesiąt Hz -- moc naszego nadajnika skupia się w wąskim wycinku częstotliwości, pozwalając na nawiązanie łączności nawet jeśli nie jest to możliwe na SSB. Dodatkową zaletą jest brak konieczności wydzierania się do mikrofonu, co pozytywnie wpływa na stosunki z domownikami (szczególnie późną nocą).
+
+Każde pasmo fal krótkich ma wydzielony fragment do pracy emisjami cyfrowymi: okolice 3570, 7040, 10140, 14070, 18100, 21080, 24920, 28100 kiloherców -- szczegółowe informacje dostępne są w bandplanach. 
 
 \section{Co to jest bandplan?}
 Bandplan to jest podział pasm na części, w których powinno się nadawać odpowiednią modulacją, z odpowiednią mocą, czy robiąc dalekie łączności. Jest to jasno określone przy każdym wycinku pasma. 
@@ -290,7 +296,7 @@ Dane z APRS-u można oglądać w internecie na stronie aprs.fi
 Istnieje wiele satelitów, które posiadają przemienniki liniowe, lub FM. Można przez nie nawiązywać łączności z zachowaniem odpowiednich norm (nadawanie małą mocą, wąska modulacja itp.). Jest to pewien rodzaju sportu wśród radioamatorów.
 
 \section{Co to jest EME?}
-EME (Earth-Moon-Earth), to łączności polegające na odbijaniu sygnału od powierzchni księżyca. Wymagają one rozbudowanych anten (długie Yagi) i dużych mocy, by można było chociaż ułamek mocy usłyszeć znów na Ziemi. Używa się do tego zazwyczaj wolnej telegrafii i transmisji cyfrowych (JT-65).
+EME (Earth-Moon-Earth), to łączności polegające na odbijaniu sygnału od powierzchni księżyca. Wymagają one rozbudowanych anten (długie Yagi) i dużych mocy, by można było chociaż ułamek mocy usłyszeć znów na Ziemi. Najpopularniejsze pasma to (kolejno) 2m, 23cm, 70cm. Większość łączności to cyfrowe JT65 i telegrafia, stacje mające talerze o średnicy 15 metrów albo zestawy 16 długich anten Yagi-Uda mogą prowadzić też łączności SSB.
 
 \section{O czym nie należy rozmawiać na radiu a co jest mile widziane?}
 Zdecydowanie odpada polityka i religia. Chodzi po prostu o nie wywoływanie niepotrzebnych dyskusji. Trollowanie nie jest niemile widziane więc jeśli zaczniesz i wyrobisz sobie opinie trolla po prostu ludzie zaczną Cię ignorować.
@@ -310,7 +316,7 @@ W Krakowie na 126.125 w modulacji AM. Należy pamiętać, że ta częstotliwoś�
 Pogodę można sprawdzić również po APRS-ie, albo korzystając ze stacji zwanych SR0WX, które nadają okresowo komunikat głosowy z pogodą.
 
 \section{Czy można słuchać samolotów?}
-Można. Mało to ciekawe na dłuższą metę ale można.
+Można. Mało to ciekawe na dłuższą metę ale można. Częstotliwości łatwo znaleźć w sieci szukając po kodzie lotniska wg. ICAO (np. Warszawa Chopin = EPWA) i oznaczeniu częstotliwości: APP -- approach (podejście), GND -- ground, TWR -- tower.
 
 \section{Czy można słuchać służb mundurowych?}
 Technicznie słuchać można wszystkiego. Za to informacji zasłyszanych na pasmach innych niż amatorskie/ogólnodostępne nie wolno rozpowszechniać ani wykorzystywać. Jednak jeśli transmisja jest szyfrowana nie wolno jej odszyfrowywać.
